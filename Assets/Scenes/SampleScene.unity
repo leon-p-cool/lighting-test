@@ -394,7 +394,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &202615941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -971,15 +971,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settings:
-  - Emissive: []
   - Emissive:
     - {fileID: 484392556}
-  cycleLigthmaps: 1
+  - Emissive: []
+  cycleLigthmaps: 0
   cycleInterval: 1
   pingPong: 0
   lightmaps:
-  - {fileID: 2800000, guid: b6009522532c38a39cc50f63cfac10cb, type: 3}
   - {fileID: 2800000, guid: 062854c25da4648ea57be7c5607480b9, type: 3}
+  - {fileID: 2800000, guid: b6009522532c38a39cc50f63cfac10cb, type: 3}
 --- !u!114 &1010648227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -993,11 +993,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Configurations:
-  - Name: Day
-    BakedLightmap: {fileID: 2800000, guid: b6009522532c38a39cc50f63cfac10cb, type: 3}
-    Objects:
-    - {fileID: 202615940}
-    Emissive: []
   - Name: Night Glow
     BakedLightmap: {fileID: 2800000, guid: 062854c25da4648ea57be7c5607480b9, type: 3}
     Objects:
@@ -1005,6 +1000,11 @@ MonoBehaviour:
     - {fileID: 1110531117}
     Emissive:
     - {fileID: 484392556}
+  - Name: Day
+    BakedLightmap: {fileID: 2800000, guid: b6009522532c38a39cc50f63cfac10cb, type: 3}
+    Objects:
+    - {fileID: 202615940}
+    Emissive: []
 --- !u!4 &1010648228
 Transform:
   m_ObjectHideFlags: 0
@@ -1037,7 +1037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1110531118
 Transform:
   m_ObjectHideFlags: 0
@@ -1822,7 +1822,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2100226486
 Transform:
   m_ObjectHideFlags: 0

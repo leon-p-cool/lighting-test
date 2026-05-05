@@ -18,20 +18,44 @@ needle-engine {
     z-index: 0;
 }
 
-.ui-button {
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    z-index: 10;
+.overlay {
+    position: absolute;
+    inset: 0;
+    padding: 0.5rem;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 1rem;
+    padding: 0.5rem;
+    width: 15%;
+    height: fit-content;
+    background: rgba(140, 30, 140, 0.4);
+    border-radius: 10px;
+}
+
+button {
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.control-button {
     padding: 0.75rem 1rem;
     border: 0;
     border-radius: 999px;
     background: rgba(20, 20, 20, 0.85);
     color: #fff;
-    font: 600 14px/1 system-ui, sans-serif;
-    cursor: pointer;
+    font-family: Monospace;
+    font-weight: bolder;
+    flex-grow: 1;
+    width: fit-content;
 }
 
-.ui-button:hover {
+.control-button:hover {
     background: rgba(20, 20, 20, 0.95);
 }

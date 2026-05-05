@@ -8,7 +8,19 @@ NeedleEngine.addContextCreatedCallback(({context}) => {
 });
 
 window.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("prev-lightmap")?.addEventListener("click", () => {
+        lightmaps?.previousLightmap();
+    });
+});
+
+window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("next-lightmap")?.addEventListener("click", () => {
         lightmaps?.nextLightmap();
+    });
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("cycle-lightmap")?.addEventListener("click", () => {
+        lightmaps?.startCyclingLightmaps();
     });
 });

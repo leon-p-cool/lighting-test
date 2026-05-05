@@ -22,6 +22,13 @@
   <script type="module" src="./src/main.ts"></script>
 
   <needle-engine></needle-engine>
-  <button id="next-lightmap" class="ui-button">Next lightmap</button>
+  <div class="overlay">
+    <div class="controls">
+      <button id="prev-lightmap" class="control-button">PREV</button>
+      <button id="next-lightmap" class="control-button">NEXT</button>
+      <button id="cycle-lightmap" class="control-button" style="flex-grow: 2;">AUTO CYCLE</button>
+    </div>
+
+  </div>
 </body>
 </html>
